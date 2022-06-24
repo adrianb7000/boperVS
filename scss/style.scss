@@ -1,0 +1,116 @@
+$colorbg: white;
+$colorbgg: brown;
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+
+    li {
+        float: left;
+
+        a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+    }    
+}
+
+html {
+    background: #c5dbe6;
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    padding: 20px 0;
+}
+
+img {
+    width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+    .band {
+      grid-template-columns: 1fr 1fr;
+    }  
+    .item-1 {
+    grid-column: 1/ span 2;
+    }
+    .item-1 h1 {
+      font-size: 30px;
+    }
+    .topnav a {
+      float: none;
+      width: 100%;
+    }
+}
+  
+@media only screen and (min-width: 850px) {
+    .band {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+header, footer{
+    grid-column: 1 / span 3;
+}
+
+@mixin fontStyle($color, $fontSize) {
+    font-size: $fontSize;
+    color: $color;
+    margin: 0;
+}
+
+h1 {
+    @include fontStyle(blue, 40px);
+}
+
+p {
+    @include fontStyle(red, 25px);
+}
+
+.outerParent {
+    width: 400px;
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    
+    .user-box {
+      position: relative;
+      margin-bottom: 1rem;
+  
+      input {
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid #fff;
+        width: 100%;
+        margin-bottom: 2rem;
+        font-size: 16px;
+        padding: 3px;
+        color: white;
+        outline: none;
+        // -moz-outline: none;
+      }
+  
+      label {
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: white;
+        transition: all 0.3s ease;
+        pointer-events: none;
+      }
+      input:valid ~ label,
+      input:focus ~ label {
+        top: -20px;
+        left: 0;
+        color: #03e9f4;
+        font-size: 12px;
+        outline: none;
+      }
+    }
+} 
