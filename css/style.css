@@ -5,6 +5,9 @@ html {
   padding: 20px 0;
 }
 
+/*
+Estilos de listas - begin
+*/
 ul {
     list-style-type: none;
     margin: 0;
@@ -28,6 +31,9 @@ li a {
 li a:hover {
     background-color: #111;
 }
+/*
+Estilos de listas - end
+*/
 
 /* .footer {
   left: 0;
@@ -39,27 +45,36 @@ li a:hover {
   text-align: center;
 } */
 
+/*
+Estilos de tablas - begin
+*/
 table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
     border:1px solid black;
-  }
+}
   
-  td, th {
+td, th {
     text-align: left;
     padding: 8px;
     border:1px solid black;
-  }
+}
   
-  tr:nth-child(even) {
+tr:nth-child(even) {
     background-color: #dddddd;
-  }
+}
+/*
+Estilos de tablas - end
+*/
 
-  img {
+img {
     width: 100%;
-  }
+}
 
+/*
+Estilos de grids - begin
+*/
 .grid-container{
   font-size: 30px;
   background-color: beige;
@@ -99,6 +114,9 @@ header, footer{
   justify-content: center;
   align-items: center;
 }
+/*
+Estilos de grids - end
+*/
 
 .band {
   width: 90%;
@@ -113,6 +131,9 @@ header, footer{
   
 }
 
+/*
+Estilos de media querys - begin
+*/
 @media only screen and (min-width: 600px) {
   .band {
     grid-template-columns: 1fr 1fr;
@@ -134,9 +155,13 @@ header, footer{
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
+/*
+Estilos de media querys - end
+*/
 
-/* card */
-
+/* 
+Estilos de card - begin
+*/
 .card {
   min-height: 100%;
   background: white;
@@ -191,6 +216,9 @@ h1 {
   letter-spacing: .05em;
   margin: 2em 0 0 0;
 }
+/* 
+Estilos de card - end
+*/
 
 .container {
   position: relative;
@@ -198,6 +226,7 @@ h1 {
   height: 0;
   padding-bottom: 56.25%;
 }
+
 .video {
   position: absolute;
   top: 0;
