@@ -14,33 +14,83 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li>
-                <a href="../index.html">Home</a>
-            </li>
-            <li>
-                <a href="../pages/servicios.html">Servicios</a>
-            </li>
-            <li>
-                <a href="../pages/productos.html">Productos</a>
-            </li>
-            <li>
-                <a href="../pages/clientes.html">Clientes</a>
-            </li>
-            <li>
-                <a href="../pages/recursos.html">Recursos</a>
-            </li>
-            <li>
-                <a href="../pages/contacto.html">Contacto</a>
-            </li>                
-        </ul>
-    </nav>
+    <div class="mainHeader">
+        <nav>
+            <ul class="menu">
+              <li class="menu__item">
+                  <a href="../../index.html">Inicio</a>
+              </li>
+              <li class="menu__item">
+                  <a href="./servicios.html" class="menu__link--active">Servicios</a>
+              </li>
+              <li class="menu__item">
+                  <a href="./nosotros.html">Nosotros</a>
+              </li>
+              <li class="menu__item">
+                  <a href="./contacto.html">Contacto</a>
+              </li>                
+            </ul>
+        </nav>
 
-    <div class="container">
-       <p>PAGINA EN MODIFICACION PARA ENTREGA FINAL</p>
+        <div class="main-container">
+            <div class="service-container-card --service-1 --box-width">
+                <div class="service-container-left box-blue --img">
+                    <img src="../assets/img/laptop boper.png" alt="Estructuras Metálicas">
+                </div>
+                <div class="service-container-right --text">
+                    <h2>Sistemas Informáticos</h2>
+                    <span> <span style="color:blue;font-weight:bold">Automatización de almacenes:</span> Utilizamos Hand Helds o computadoras de mano y radio frecuencia, <br>
+                        <span style="color:blue;font-weight:bold">Toma de inventarios de almacenes y activos fijos:</span> Por conteos, ciego o contrastado con stock, <br> 
+                        <span style="color:blue;font-weight:bold">Gestión y Contabilidad de Costos Industriales:</span> Sinceramiento y visualización de los costos, <br>
+                        <span style="color:blue;font-weight:bold">Control de Activos Fijos:</span> Gestión, depreciación, contabilización.</span>
+                </div>
+            </div>
+
+            <div class="service-container-card --service-2 --box-width">
+                <div class="service-container-left --text">
+                    <h2>Consultoría Informática</h2>
+                    <span> <span style="color:blue;font-weight:bold">Diagnóstico informático empresarial</span> <br> 
+                           <span style="color:blue;font-weight:bold">Asesoria Informática empresarial</span> <br> 
+                           <span style="color:blue;font-weight:bold">Desarrollo informático a medida</span> <br>
+                           <span style="color:blue;font-weight:bold">Monitoreo Informático empresarial</span> <br>  
+                    </span>
+                </div>
+                <div class="service-container-right box-green --img">
+                    <img src="../assets/img/laptop.PNG" alt="Trabajos Tradicionales">
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer-social-links footer-container">
+                <ul class="nav-list-container">
+                    <li class="nav-list-container__item">
+                        <a href="http://www.youtube.com/boper" target="_blank">
+                            <i class="footer-social-links__ico ico-yt"></i>
+                        </a>
+                    </li>
+                    <li class="nav-list-container__item">
+                        <a href="http://www.instagram.com/boper" target="_blank">
+                            <i class="footer-social-links__ico ico-ig"></i>
+                        </a>
+                    </li>
+                    <li class="nav-list-container__item">
+                        <a href="http://www.twitter.com/boper" target="_blank">
+                            <i class="footer-social-links__ico ico-tw"></i>
+                        </a>
+                    </li>
+                    <li class="nav-list-container__item">
+                        <a href="http://www.facebook.com/boper" target="_blank">
+                            <i class="footer-social-links__ico ico-fb"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-copyright footer-container">
+                <span>©Copyright 2022 - BOPER EIRL</span>
+            </div>
+        </footer>        
+
     </div>
-      
-    
 </body>
 </html>

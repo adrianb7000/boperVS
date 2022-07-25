@@ -8,99 +8,83 @@
     <meta name="google-site-verification" content="+nxGUDJ4QpAZ5l9Bsjdi102tLVC21AIh5d1Nl23908vVuFHs34="/>
     <meta name="keywords" content="FINANZAS, COSTOS, INFORMATICA, META">
     <title>Empresa de Servicios Boper</title>
-    <!--link rel="stylesheet" href="./css/style.css" -->
-    <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <div class="container">
+    <div class="mainHeader">
       <nav>
-          <ul>
-              <li>
-                  <a href="./pages/servicios.html">Servicios</a>
-              </li>
-              <li>
-                  <a href="./pages/productos.html">Productos</a>
-              </li>
-              <li>
-                  <a href="./pages/clientes.html">Clientes</a>
-              </li>
-              <li>
-                  <a href="./pages/recursos.html">Recursos</a>
-              </li>
-              <li>
-                  <a href="./pages/contacto.html">Contacto</a>
-              </li>                
-          </ul>
+        <ul class="menu">
+          <li class="menu__item">
+              <a href="../../index.html" class="menu__link--active">Inicio</a>
+          </li>
+          <li class="menu__item">
+              <a href="./pages/servicios.html">Servicios</a>
+          </li>
+          <li class="menu__item">
+              <a href="./pages/nosotros.html">Nosotros</a>
+          </li>
+          <li class="menu__item">
+              <a href="./pages/contacto.html">Contacto</a>
+          </li>                
+        </ul>
       </nav>
 
-        <div class="item-1">
-              <a class="card">
-                <div class="thumb" style="background-image: url(../assets/img/bopersi.png);"></div>
-                <article>
-                  <h1>Sistemas Integrados</h1>
-                  <span>Latam</span>
-                </article>
-              </a>
+      <div class="main-container">
+        <div class="service-container-card --service-1 --box-width">
+            <div class="service-container-left box-blue --img">
+                <img src="../assets/img/bopersi.png" alt="Estructuras Metálicas">
+            </div>
+            <div class="service-container-right --text">
+                <h2>Sistemas Informáticos</h2>
+                <span>Contamos con diversos sistemas automatizados para la efectiva gestión empresarial, entre ellos: <br>
+                    Automatización de almacenes, Toma de inventarios de almacenes y activos fijos, <br> Control de Activos Fijos, 
+                    Gestión y Contabilidad de Costos Industriales.</span>
+            </div>
         </div>
-        <div class="item-2">
-              <a class="card">
-                <div class="thumb" style="background-image: url(../assets/img/socioNeg.png);"></div>
-                <article>
-                  <h1>Asesoría Informática</h1>
-                  <span>Latam</span>
-                </article>
-              </a>
-        </div>
-        <div class="item-3">
-          <a class="card">
-            <div class="thumb" style="background-image: url(../assets/img/asesoria2.png);"></div>
-            <article>
-              <h1>Socio de negocios</h1>
-              <p>Permanentemente nos integramos en grandes alianzas con propuestas interesantes y modernas</p>
-              <span>Latam</span>
-            </article>
-          </a>
-        </div>
-        <div class="item-4">
-              <a class="card">
-                <div class="thumb" style="background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/landing.png);"></div>
-                <article>
-                  <h1>Alianzas estratetigas - ERPs</h1>
-                  <p>Formamos parte de soluciones corporativas</p>
-                  <span>Latam</span>
-                </article>
-              </a>
-        </div>
-        <div class="item-5">
-              <a class="card">
-                <div class="thumb" style="background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/strange.jpg);"></div>
-                <article>
-                  <h1>Productos</h1>
-                  <span>Latam</span>
-                </article>
-              </a>
-        </div>
-        <div class="item-6">
-          <a class="card">
-            <div class="thumb" style="background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/flor.jpg);"></div>
-            <article>
-              <h1>Servicios</h1>
-              <span>Latam</span>
-            </article>
-          </a>
-        </div>
-        <div class="item-7">
-          <a class="card">
-            <div class="thumb" style="background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/china.png);"></div>
-            <article>
-              <h1>Nosotros</h1>
-              <span>Latam</span>
-            </article>
-          </a>
-        </div>
-    </div>    
 
+        <div class="service-container-card --service-2 --box-width">
+            <div class="service-container-left --text">
+                <h2>Consultoría Informática</h2>
+                <span>Diagnosticamos y asesoramos empresas de todo nivel para una efectiva automatización, <br> contamos con 
+                    Consultores de amplia experiencia.</span>
+            </div>
+            <div class="service-container-right box-green --img">
+                <img src="../assets/img/asesoria2.png" alt="Trabajos Tradicionales">
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer-social-links footer-container">
+                <ul class="nav-list-container">
+                    <li class="nav-list-container__item">
+                        <a href="http://www.youtube.com/boper" target="_blank">
+                            <i class="footer-social-links__ico ico-yt"></i>
+                        </a>
+                    </li>
+                    <li class="nav-list-container__item">
+                        <a href="http://www.instagram.com/boper" target="_blank">
+                            <i class="footer-social-links__ico ico-ig"></i>
+                        </a>
+                    </li>
+                    <li class="nav-list-container__item">
+                        <a href="http://www.twitter.com/boper" target="_blank">
+                            <i class="footer-social-links__ico ico-tw"></i>
+                        </a>
+                    </li>
+                    <li class="nav-list-container__item">
+                        <a href="http://www.facebook.com/boper" target="_blank">
+                            <i class="footer-social-links__ico ico-fb"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-copyright footer-container">
+                <span>©Copyright 2022 - BOPER EIRL</span>
+            </div>
+        </footer>        
+      </div>
+
+    </div>    
 </body>
 </html>
